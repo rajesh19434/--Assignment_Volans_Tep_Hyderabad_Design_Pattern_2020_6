@@ -1,17 +1,17 @@
 class Newbikepurchase{
     constructor(bikename, model, price, details, style){
-        this._ = bikename;
-        this._ = model;
-        this._ = price;
-        this._ = details;
-        this._ = style;
+        this._bikename = bikename;
+        this._model = model;
+        this._price = price;
+        this._details = details;
+        this._style = style;
     }
     lookfeatures() {
-        return '${ this._name } handles ${ this.newlook() }';
+        return '${ this._bikename } handles ${ this.newlook() }';
     }
 
     getCashpayment(){
-        return '${ this._name } got cashpayment${ this._price }';
+        return '${ this._bikename } got cashpayment${ this._price}';
     }
 }
 
@@ -42,4 +42,7 @@ console.log(sale.lookfeatures());
 const explainer = new Bikeexplainer('Yamaha RX', 2020, 220000, 'Superb', 'brilliant');
 console.log(explainer.getCashpayment());
 console.log(explainer.lookfeatures());
+
+
+
 
